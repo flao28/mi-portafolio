@@ -1,0 +1,136 @@
+/* Hero Section */
+.home {
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.primera-imagen {
+  position: absolute;
+  inset: 0;
+  background-image: url('../images/primer_pantallazo2.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.primera-imagen::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.info-primera-imagen {
+  height: 100%;
+  position: relative;
+  z-index: 10;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 8rem 4rem 0 4rem;
+  text-align: center;
+  color: white;
+}
+
+.info-primera-imagen h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+
+.info-primera-imagen p {
+  font-size: 1.25rem;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  color: rgb(229, 231, 235);
+}
+
+.content-btns {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+}
+.content-btns button{
+  display: inline-block;
+  width: 280px;
+  height: 3rem;
+  border: none;
+  border-radius: .5rem;
+  font-size: 18px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  margin: auto;
+}
+.content-btns button:first-of-type {
+  background-color: rgb(22, 163, 74);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-btns button:first-of-type:hover {
+  background-color: rgb(21, 128, 61);
+}
+
+.content-btns button:last-of-type {
+  background-color: white;
+  color: rgb(22, 101, 52);
+}
+
+.content-btns button:last-of-type:hover {
+  background-color: rgb(243, 244, 246);
+}
+
+
+.arrow {
+  width: 20px;
+  height: 20px;
+  transition: all .3s linear;
+}
+
+.content-btns button:first-of-type:hover>.arrow {
+  display: inline-block;
+  scale: 1.5;
+  margin-left: 5px;
+}
+
+.content-stats {
+  width: 40%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stats {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box-stats{
+  width: 30%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-top: 1rem;
+}
+.box-stats h3{
+  color: rgb(22, 163, 74);
+  font-weight: bold;
+}
+.box-stats p{
+  color: #fff;
+}
+.icons-stats{
+  width: 30px;
+  height: 30px;
+  color: rgb(22, 163, 74);
+}

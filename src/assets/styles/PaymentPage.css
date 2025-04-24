@@ -1,0 +1,206 @@
+/* Payment Container */
+.payment-container {
+    min-height: 100vh;
+    background-color: rgb(249, 250, 251);
+    padding: 3rem 1rem;
+  }
+  
+  .payment-content {
+    max-width: 48rem;
+    margin: 0 auto;
+  }
+  
+  .payment-content h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: rgb(17, 24, 39);
+  }
+  
+  /* Payment Card */
+  .payment-card {
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+  }
+  
+  .payment-card h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: rgb(17, 24, 39);
+  }
+  
+  /* Amount Selection */
+  .amount-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .amount-button {
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: 2px solid rgb(229, 231, 235);
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+  
+  .amount-button:hover {
+    border-color: rgb(22, 163, 74);
+  }
+  
+  .amount-button.selected {
+    border-color: rgb(22, 163, 74);
+    background-color: rgb(220, 252, 231);
+    color: rgb(22, 163, 74);
+  }
+  
+  /* Custom Amount */
+  .custom-amount {
+    margin-bottom: 2rem;
+  }
+  
+  .custom-amount label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: rgb(75, 85, 99);
+    margin-bottom: 0.5rem;
+  }
+  
+  .amount-input {
+    position: relative;
+  }
+  
+  .amount-input span {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(107, 114, 128);
+  }
+  
+  .amount-input input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 2rem;
+    border: 2px solid rgb(229, 231, 235);
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+  }
+  
+  .amount-input input:focus {
+    border-color: rgb(22, 163, 74);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(22, 163, 74, 0.2);
+  }
+  
+  /* Payment Methods */
+  .payment-methods {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  
+  .method-button {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 2px solid rgb(229, 231, 235);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.2s;
+  }
+  
+  .method-button:hover {
+    border-color: rgb(22, 163, 74);
+  }
+  
+  .method-button.selected {
+    border-color: rgb(22, 163, 74);
+    background-color: rgb(220, 252, 231);
+  }
+  
+  .method-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: rgb(75, 85, 99);
+  }
+  
+  .method-button.selected .method-icon {
+    color: rgb(22, 163, 74);
+  }
+  
+  /* Submit Button */
+  .submit-button {
+    width: 100%;
+    padding: 1rem;
+    background-color: rgb(22, 163, 74);
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background-color 0.2s;
+  }
+  
+  .submit-button:hover:not(:disabled) {
+    background-color: rgb(21, 128, 61);
+  }
+  
+  .submit-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  /* Volunteer Form */
+  .volunteer-form {
+    background-color: white;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: rgb(75, 85, 99);
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid rgb(229, 231, 235);
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    border-color: rgb(22, 163, 74);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(22, 163, 74, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .amount-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .payment-methods {
+      grid-template-columns: 1fr;
+    }
+  }

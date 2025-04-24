@@ -1,0 +1,217 @@
+/* Donations Container */
+.donations-container {
+    height: 100%;
+    background: #112836;
+    margin-bottom: 4rem;
+}
+
+/* Hero Section */
+.hero-section {
+    background: #112836;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    height: 100%;
+}
+
+.hero-content {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    opacity: 0.9;
+}
+
+/* Contribution Section */
+.contribution-section {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    height: 100%;
+    background: #304755ff;
+}
+
+.contribution-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.contribution-card {
+    background-color: #173446;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.contribution-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    background-color: #fff;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.card-icon svg {
+    width: 1.8rem;
+    height: 1.8rem;
+    color: #304755;
+}
+
+.contribution-card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #CAD6DE;
+}
+
+.contribution-card p {
+    color: #CAD6DE;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+/* Donation Options Section */
+.donation-options-section {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    height: 100%;
+    background: #304755ff;
+}
+
+.donation-options-section h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.option-card {
+    background-color: #173446;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.option-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    padding: 1rem;
+}
+
+.monthly .card-header {
+    background-color: rgb(39, 104, 63);
+}
+
+.single .card-header {
+    background-color: rgb(39, 60, 105);
+}
+
+.volunteer .card-header {
+    background-color: rgb(69, 36, 100);
+}
+
+.card-header h3 {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content p {
+    color: #CAD6DE;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+.donate-button {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.monthly .donate-button {
+    /* background-color: rgb(22, 163, 74); */
+    background-color: rgb(39, 104, 63);
+    color: white;
+    border: none;
+}
+
+.single .donate-button {
+    /* background-color: rgb(37, 99, 235); */
+    background-color: rgb(39, 60, 105);
+    color: white;
+    border: none;
+}
+
+.volunteer .donate-button {
+    /* background-color: rgb(147, 51, 234); */
+    background-color: rgb(69, 36, 100);
+    color: white;
+    border: none;
+}
+
+.button-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+
+    .contribution-grid,
+    .options-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.25rem;
+    }
+
+    .contribution-grid,
+    .options-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,107 @@
+.contact{
+    width: 90%;
+    height: 100%;
+    background: #112836;
+}
+
+.contact h2{
+    font-size: 2.7em;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+.contact form{
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    box-sizing: border-box;
+    padding: .2% 10%;
+}
+.input-box {
+    position:relative;
+}
+
+.input-box > input {
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    padding: 0 30px;
+    outline:none;
+    background: rgba(255 255 255 / .1);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    transition:.3s;
+    color:#fff;
+    margin-bottom: .5rem;
+    position: relative;
+}
+
+.input-box > input::placeholder,
+.input-box > textarea::placeholder {
+    color:#a3a3a3;
+    
+}
+
+.input-box > input:focus::placeholder,
+.input-box > textarea:focus::placeholder {
+    color:transparent;
+}
+
+.input-box > input:focus,
+.input-box > textarea:focus {
+    border-bottom:1px solid rgb(247, 234, 236);
+    animation: shake .2s;
+}
+
+.input-box > textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: rgba(255 255 255 / .1);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    outline: none;
+    transition:.3s;
+    color:#fff;
+    letter-spacing: 1.5px;
+}
+.icons-form{
+    position: absolute;
+    top: 20%;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+}
+.content-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-form {
+    display: inline-block;
+    width: 280px;
+    box-sizing: border-box;
+    padding: 10px;
+    outline: none;
+    background: rgba(0, 0, 0, 0.281);
+    color:#fffffff5; 
+    transition: .3s;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius:.5rem;
+    border: none;
+    font-weight: bolder;
+    margin: .5rem auto;
+}
+
+.btn-form:hover{
+    background: #88b9ab;
+    color: aqua; 
+}
+
+@keyframes shake { 
+    0%, 100% {transform: translateX(0);} 
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);} 
+    20%, 40%, 60%, 80% {transform: translateX(10px);} 
+}

@@ -1,0 +1,74 @@
+.projects{
+    width: 90%;
+    height: 100%;
+    background: #112836;
+    box-sizing: border-box;
+}
+.projects div h2{
+    font-size: 2.7em;
+    margin-bottom: 1rem;
+}
+.content-projects-futuros{
+    width: 100%;
+    background: #5CC97B;
+    box-sizing: border-box;
+    padding: 1rem;  
+    color: black;
+    margin-bottom: 1rem;
+}
+.projects-futuros{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.projects-futuros div{
+    box-sizing: border-box;
+    padding: 1rem; 
+    flex: 1 1 15px;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    background: #4fac69;
+    border-radius: .5rem;
+}
+.projects-futuros h3{
+    margin-bottom: 1rem;
+    font-size: 24px;
+}
+.projects-futuros p{
+    font-size: 20px;
+}
+
+.content-projects-accion{
+    width: 100%;
+    background: #304755ff;
+    box-sizing: border-box;
+    padding: 1rem;  
+    color: black;
+    margin-bottom: 1rem;
+    color: #CAD6DE;
+}
+.projects-accion{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.projects-accion div{
+    box-sizing: border-box;
+    padding: 1rem; 
+    flex: 1 1 15px;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    background: #173446;
+    border-radius: .5rem;
+}
+.projects-accion h3{
+    margin-bottom: 1rem;
+    font-size: 24px;
+}
+.projects-accion p{
+    font-size: 20px;
+}
+
+
+
+

@@ -1,0 +1,58 @@
+.sostenibilidad{
+    width: 90%;
+    height: 100%;
+    background: #112836;
+}
+.sostenibilidad h2{
+    font-size: 2.7em;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.content-father-sostenibilidad{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.content-father-sostenibilidad div{
+    flex: 1 1 auto;
+    display: inline-block;
+    width: 31%;
+    height: 100%;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    box-sizing: border-box;
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: #304755ff;
+}
+.content-father-sostenibilidad div h3{
+    margin-bottom: 1rem;
+    font-size: 24px;
+    color: #CAD6DE;
+}
+.content-father-sostenibilidad div p{
+    color: #CAD6DE;
+    font-size: 20px;
+}
+.content-father-sostenibilidad .child-sostenibilidad{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media (max-width:720px) {
+    .content-father-sostenibilidad div{
+        width: 60%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+@media (max-width:480px) {
+    .content-father-sostenibilidad div{
+        width: 80%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
